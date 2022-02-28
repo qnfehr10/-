@@ -14,7 +14,7 @@ public class Day01_6 { // c s
 		
 		*/
 		
-		System.out.println("작성자 이름, 내용, 날짜 순으로 입력해주세요");
+		System.out.println("작성자 이름 내용 날짜 순으로 입력해주세요");
 
 		Scanner scanner = new Scanner(System.in);
 		String 작성자 = scanner.next();
