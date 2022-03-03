@@ -1,7 +1,7 @@
 package Day02;
 
 import java.util.Scanner;
-
+import java.util.Arrays;
 public class Day02_5 {
 	
 	public static void main(String[] args) {
@@ -98,60 +98,103 @@ public class Day02_5 {
 //			int i10 = sc.nextInt();
 //			System.out.println("표준체중 = " + ((i10 - 100)*0.9));
 //		
-		//문제11: 키와 몸무게를 입력받아 BMI 출력하기
-				//BMI 계산식 = > 몸무게 / ((키 / 100) * (키 / 100))
-			
-			System.out.println("11번 키와 몸무게를 입력해주세요 : ");
-			int i11_1 = sc.nextInt();
-			int i11_2 = sc.nextInt();
-			System.out.println("BMI : " + (i11_2/((i11_1/100)*(i11_1/100))));
-		
-		//문제12: inch 를 입력받아 cm 로 변환하기 [ 1 inch -> 2.54cm ] 
-			
-			System.out.println("12번 inch를 입력해주세요 : ");
-			int i12 = sc.nextInt();
-			System.out.println("입력해 주신 값은 " + i12*2.54 + " cm 입니다.");
-		
-		//문제13:  중간고사, 기말고사, 수행평가를 입력받아 반영비율별 계산하기
-				//소수 둘째 자리 까지 점수 출력하기
-				//중간고사 반영비율 => 30 %
-				//기말고사 반영비율 => 30 %
-				//수행평가 반영비율 => 40 %
-			
-			
-			System.out.println("13번 중간, 기말, 수행평가 점수를 입력해주세요 : ");
-			double i13_1 = sc.nextDouble();
-			double i13_2 = sc.nextDouble();
-			double i13_3 = sc.nextDouble();
-			double 중간비율 = i13_1*0.3; 
-			double 기말비율 = i13_2*0.3;
-			double 수행비율 = i13_3*0.3;
-			
-			System.out.printf("중간고사 반영비율 %.2f%n ", 중간비율);
-			System.out.printf("기말고사 반영비율 %.2f%n ", 기말비율);
-			System.out.printf("수행평가 반영비율 %.2f%n ", 수행비율);
-			
-			//문제14 :  연산 순서 나열 하고 x와 y값 예측하기
-		 	//int x = 10;
-			//int y = x-- + 5 + --x;
-			//printf(" x의 값 : %d , y의값 :  %d ", x, y)
-			
-			System.out.println("14번 연산 순서 나열");
-			int x = 10;
-			int y = x-- + 5 + --x;
-			System.out.printf(" x의 값 : %d , y의값 : %d%n ", x, y);
-		
-		//문제15 : 나이를 입력받아 나이가 10세이상이면 학생 , 20세이상이면 성인 , 40세이상이면 중년 으로 출력하기
-			
-			System.out.println("15번 나이를 입력해주세요 : ");
-			int i15 = sc.nextInt();
-			String 나이 = i15 >=40 ? "중년" : i15 >= 20 ? "성인" : i15 >=10 ? "학생" : "해당없음";
-			System.out.println("당신은 : " + 나이 + " 입니다.");
+//		//문제11: 키와 몸무게를 입력받아 BMI 출력하기
+//				//BMI 계산식 = > 몸무게 / ((키 / 100) * (키 / 100))
+//			
+//			System.out.println("11번 키와 몸무게를 입력해주세요 : ");
+//			int i11_1 = sc.nextInt();
+//			int i11_2 = sc.nextInt();
+//			System.out.println("BMI : " + (i11_2/((i11_1/100)*(i11_1/100))));
+//		
+//		//문제12: inch 를 입력받아 cm 로 변환하기 [ 1 inch -> 2.54cm ] 
+//			
+//			System.out.println("12번 inch를 입력해주세요 : ");
+//			int i12 = sc.nextInt();
+//			System.out.println("입력해 주신 값은 " + i12*2.54 + " cm 입니다.");
+//		
+//		//문제13:  중간고사, 기말고사, 수행평가를 입력받아 반영비율별 계산하기
+//				//소수 둘째 자리 까지 점수 출력하기
+//				//중간고사 반영비율 => 30 %
+//				//기말고사 반영비율 => 30 %
+//				//수행평가 반영비율 => 40 %
+//			
+//			
+//			System.out.println("13번 중간, 기말, 수행평가 점수를 입력해주세요 : ");
+//			double i13_1 = sc.nextDouble();
+//			double i13_2 = sc.nextDouble();
+//			double i13_3 = sc.nextDouble();
+//			double 중간비율 = i13_1*0.3; 
+//			double 기말비율 = i13_2*0.3;
+//			double 수행비율 = i13_3*0.3;
+//			
+//			System.out.printf("중간고사 반영비율 %.2f%n ", 중간비율);
+//			System.out.printf("기말고사 반영비율 %.2f%n ", 기말비율);
+//			System.out.printf("수행평가 반영비율 %.2f%n ", 수행비율);
+//			
+//			//문제14 :  연산 순서 나열 하고 x와 y값 예측하기
+//		 	//int x = 10;
+//			//int y = x-- + 5 + --x;
+//			//printf(" x의 값 : %d , y의값 :  %d ", x, y)
+//			
+//			System.out.println("14번 연산 순서 나열");
+//			int x = 10;
+//			int y = x-- + 5 + --x;
+//			System.out.printf(" x의 값 : %d , y의값 : %d%n ", x, y);
+//		
+//		//문제15 : 나이를 입력받아 나이가 10세이상이면 학생 , 20세이상이면 성인 , 40세이상이면 중년 으로 출력하기
+//			
+//			System.out.println("15번 나이를 입력해주세요 : ");
+//			int i15 = sc.nextInt();
+//			String 나이 = i15 >=40 ? "중년" : i15 >= 20 ? "성인" : i15 >=10 ? "학생" : "해당없음";
+//			System.out.println("당신은 : " + 나이 + " 입니다.");
 		
 		//문제16 : 3개의 정수를 입력받아 오름차순으로 정렬 
 		
+			System.out.println("16번 3개의 정수를 입력해주세요 : ");
+			int i16_1 = sc.nextInt(); //1
+			int i16_2 = sc.nextInt(); //3
+			int i16_3 = sc.nextInt(); //5
+			
+			int temp,min,mid,max;
+			
+			temp = (i16_1 > i16_2) ? i16_1 : i16_2;
+			max = temp > i16_3 ? temp : i16_3;
+			
+			temp = (i16_1 < i16_2) ? i16_1 : i16_2;
+			min = temp < i16_3 ? temp : i16_3;
+			
+			mid = (i16_1 > i16_2)? ((i16_1>i16_3)?(i16_2>i16_3?i16_2:i16_3):i16_1) : ((i16_2>i16_3)?((i16_1>i16_3)?i16_1:i16_3):i16_2);
+			
+			System.out.println("순서대로 :"+min+" "+mid+" "+max);
 		//문제17 : 4개의 정수를 입력받아 내림차순으로 정렬 
-		
+			
+			System.out.println("17번 4개의 정수를 입력해주세요 : ");
+			int a = sc.nextInt(); //1 a
+			int b = sc.nextInt(); //3 b
+			int c = sc.nextInt(); //2 c
+			int d = sc.nextInt(); //5 d
+			int tmp;
+			
+		    min = (a <= b && a <= c && a <= d) ? a :        // if      (a < b && a < c) return a;
+	            (b <= a && b <= c && b <= d) ? b : 
+	            	(c <= a && c <= b && c<=d)? c:d;   // else if (b < a && b < c) return b; else return c;
+	 
+	    max = (a >= b && a >= c && a>= d) ? a :        // if      (a > b && a > c) return a;
+	            (b >= a && b >= c && b >= d) ? b : 
+	            (c >=a && c>=b && c>=d)? c:d;   // else if (b > a && b > c) return b; else return c;
+	 
+	    mid = (a >= b && a <= c) ? a : 
+	            (b >= a && b <= c) ? b :
+	            (c >= a && c <= b) ? c : 
+	            (a >= c && a <= b) ? a :
+	            (b >= c && a >= b) ? b : c;
+			
+	    int[] arr = {1,2,3,5,4};
+	    Arrays.sort(arr);
+	    System.out.println(Arrays.toString(arr));
+	    
+	    System.out.println(min+" "+mid+" "+max);
+			
 		// p. 102 확인문제
 		
 	}
