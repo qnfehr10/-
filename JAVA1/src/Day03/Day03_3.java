@@ -12,19 +12,19 @@ public class Day03_3 {
 //		
 //		//문제6
 //		// 점수를 입력받아 점수 90 이상이면 합경 아니면 불합격
-//		if(score>=90) 
+//		if(score>=90) {
 //			System.out.println("합격");
-//		else
+//		}else
 //			System.out.println("불합격");
 //		//문제7
 //		// 점수를 입력받아 90점 이상이면 A 80은 B 70은 C 그 외 재시험
-//		if(score>=90)
+//		if(score>=90) {
 //			System.out.println("A");
-//		else if(score>=80)
+//		}else if(score>=80) {
 //			System.out.println("B");
-//		else if(score>=70)
+//		}else if(score>=70) {
 //			System.out.println("C");
-//		else
+//		}else
 //			System.out.println("재시험");
 		//문제8 로그인페이지
 				// [ 입력 ] : 아이디와 비밀번호를 입력받기
@@ -49,14 +49,11 @@ public class Day03_3 {
 				// 입력한 pw가 1234 이면
 			System.out.println("로그인 성공");
 			로그인성공 = true; // id, pw 가 모두 동일하면 변수값 변경
-			}
-			else { // 입력한 pw 1234 아니면 출력
-				System.out.println("비밀번호가 틀렸습니다.");
-		}
+			}else { // 입력한 pw 1234 아니면 출력
+				System.out.println("비밀번호가 틀렸습니다."); }
 		}else { // 입력한 id가 admin이 아니면
 			System.out.println("아이디가 틀렸습니다.");
-		}
-		if( 로그인성공 == false )
+		}if( 로그인성공 == false )
 		System.out.println("로그인 실패");
 			// 로그인 성공 변수가 false 이면 출력
 		

@@ -36,8 +36,7 @@ public class Day03_5 { // c s
 			int sum = 0; // 누적합을 저장할 변수
 			for ( int i = 1 ; i<=100 ; i++ ) {
 				// * i는 1부터 100까지 1씩 증가하면서 실행문 반복처리
-				sum += i; // sum = sum + i
-				
+				sum += i; // sum = sum + i	
 			}
 			
 			System.out.println("\n 1~100까지 누적합 결과  : " + sum );

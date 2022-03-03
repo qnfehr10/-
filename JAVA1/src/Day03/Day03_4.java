@@ -38,6 +38,7 @@ public class Day03_4 {
 		default : System.out.println("탈락");	 break;
 		}
 		
+		
 		// 예2)
 		int 버튼 = 3;
 		switch( 버튼 ) {

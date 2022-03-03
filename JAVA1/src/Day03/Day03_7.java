@@ -21,7 +21,7 @@ public class Day03_7 {
 			if( 선택 == 1 ) { // 만약에 입력값이 1 이면
 				System.out.println(" 예금액 : "); int 예금액 = sc.nextInt();
 				// 입력받은 예금액을 통장에 넣기
-				balance += 예금액;
+				balance += 예금액; // balance = balance + 예금액
 			}
 			else if( 선택 == 2 ) { // 만약에 입력값이 2 이면
 				System.out.println(" 출금액 : "); int 출금액 = sc.nextInt();
@@ -42,7 +42,6 @@ public class Day03_7 {
 		} // w e
 		
 		System.out.println("프로그램 종료");
-
 	} // m e
 
 } // c e
