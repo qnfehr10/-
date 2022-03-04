@@ -85,7 +85,7 @@ public class Day04_2 {
 						콜라구매수 =0; 환타구매수=0; 사이다구매수=0;
 						System.out.println(" 알림)) 잔돈 출력 : " + (금액-총결제액)+"원");
 						break; // while
-						}	
+						}
 					} // while2 end
 					
 				}
