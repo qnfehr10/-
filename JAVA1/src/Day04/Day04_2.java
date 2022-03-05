@@ -20,7 +20,7 @@ public class Day04_2 {
 		int 콜라구매수=0; int 환타구매수=0; int 사이다구매수=0;	   // 3. 장바구니
 		
 		// 프로그램 시작 [ 무한루프 ]
-		while(true) {
+		while(true) { //1
 			System.out.println("-------------------메뉴-------------------");
 			System.out.println(" 1.콜라(300) 2.환타(200) 3.사이다(100) 4.결제 ");
 			System.out.println(">>>>>>선택 : "); int 선택 = sc.nextInt();
@@ -84,7 +84,7 @@ public class Day04_2 {
 						System.err.println(" 알림)) 구매완료");
 						콜라구매수 =0; 환타구매수=0; 사이다구매수=0;
 						System.out.println(" 알림)) 잔돈 출력 : " + (금액-총결제액)+"원");
-						break; // while
+						break; // 2번째 while문이 종료
 						}
 					} // while2 end
 					
