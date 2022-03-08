@@ -24,7 +24,7 @@ public class Day06_3 {
 		// Member 클래스로 만들어진 객체(id, pw, name, phone) 100개 저장할 수 있는 배열 선언
 		
 		// 만약에 클래스가 없었을경우에는
-		// String[][] memberlist = new Member[100][4];
+		// String[][] memberlist = new String[100][4];
 		
 		while(true) { // 프로그램 실행 무한루프 [ 종료조건:x ]
 			
@@ -42,7 +42,7 @@ public class Day06_3 {
 				// 2. 객체 생성
 				Member member = new Member();
 				// 3. 입력받은 변수4개를 객체 내 필드에 저장하기
-				member.id = id;
+				member.setId(id); // member.id = id
 				// 객체 내 필드 = 입력받은 값
 				member.password = password;
 				member.name = name;

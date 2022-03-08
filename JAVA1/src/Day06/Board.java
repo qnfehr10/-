@@ -13,8 +13,10 @@ public class Board {
 	// 2. 생성자 [ 클래스이름과 동일하면 생성자명 ]
 		// 자동 : 오른쪽클릭 source
 	
+
+	
 		// 1. 빈생성자
-	Board() {}
+
 		// 2. 1개 필드를 받는 생성자
 	Board(String title) {
 		this.title = title;

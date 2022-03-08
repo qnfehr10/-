@@ -52,8 +52,8 @@ public class Day06_6 {
 				// 1. 4개 변수를 입력받는다
 				System.out.println("------------------ 글 쓰기 페이지 -----------------");
 				System.out.print("title : ");		String title = sc.next();
-				System.out.print("content : ");	String content = sc.next();
-				System.out.print("writer : ");	String writer = sc.next();
+				System.out.print("content : ");		String content = sc.next();
+				System.out.print("writer : ");		String writer = sc.next();
 				System.out.print("password : ");	String password = sc.next();
 				// 2. 4개 변수를 개체화 [ 객체를 만들어서 4개 변수를 객체 내 필드에 저장 ]
 				Board board = new Board( title, content, writer, password);
